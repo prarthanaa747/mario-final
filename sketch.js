@@ -20,7 +20,7 @@ function preload(){
   collided    = loadAnimation("collided.png");
   restartImg  = loadImage("restart.png");
   gameOverImg = loadImage("gameOver.png");      
-  riverBg     = loadImage("riverBg.png");       
+  riverBg     = loadImage("riverbg.png");       
   winnerImg   = loadImage("winner.jpg");
   redoImg     = loadImage("redo.png");            
 
@@ -35,7 +35,6 @@ function setup(){
  mario = createSprite(200,440,20,20);
  mario.addAnimation("mario",marioImg);
  mario.addAnimation("collided",collided);
- console.log(mario);
  mario.scale = 2;
  mario.setCollider("rectangle",0,0,11,27);
  winner = createSprite(590,290,20,20);
